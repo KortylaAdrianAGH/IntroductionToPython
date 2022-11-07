@@ -1,0 +1,28 @@
+<collection shelf="New Arrivals">
+<player name="Cristiano Ronaldo">
+   <position>ST</position>
+   <birth>1998</birth>
+   <rating>2003</rating>
+   <foot>Right</foot>
+   <description>Portugal Superstar</description>
+</player>
+<player name="Lionel Messi">
+   <position>LW</position>
+   <birth>DVD</birth>
+   <rating>2000</rating>
+   <foot>Left</foot>
+   <description>Argentinian superstar</description>
+</player>
+    <player name="Mbappe">
+   <position>ST</position>
+   <birth>2005</birth>
+   <foot>Right</foot>
+   <description>France superstar</description>
+</player>
+    <player name="Neymar">
+   <position>RW</position>
+   <birth>2001</birth>
+   <foot>Right</foot>
+   <description>Brazilian superstar</description></player>
+
+</collection>
