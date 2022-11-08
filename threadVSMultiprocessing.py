@@ -7,11 +7,11 @@ def ComparisionPrint(threadResult, multiprocessingResult):
     print("Task takes threads: {}".format(threadResult))
     print("Task takes Multiprocess.Process: {}".format(multiprocessingResult))
 
-def CountToMilion():
+def CountToMilion(number = 0):
     for i in range(10000):
         for i in range(50000):
             i*i
-
+    print("koniec :)")
 
 
 if __name__ == '__main__':
@@ -24,9 +24,9 @@ if __name__ == '__main__':
     durationTimeThreads = time.perf_counter() - startTimeThread
 
     startTimeProcess = time.perf_counter()
-    processes.append(multiprocessing.Process(target=CountToMilion))
-    processes.append(multiprocessing.Process(target=CountToMilion))
-    processes.append(multiprocessing.Process(target=CountToMilion))
+    pool = multiprocessing.Pool(processes=3)
+    pool.map(CountToMilion, iterable=range(3))
+
     for i in processes:
         i.start()
 
